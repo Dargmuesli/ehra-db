@@ -41,7 +41,7 @@ Verpflichtend einzutragende Felder sind jeweils duch einen Stern markiert, der i
 
 1. **Ehrenamtliche**
 
-    Hier kann eine neue ehrenamtlich arbeitende Person eingetragen werden.
+    Hier kann eine Person als ehrenamtlich arbeitend eingetragen werden.
 
     - Person ID
     - Unterstützerkreis
@@ -54,7 +54,7 @@ Verpflichtend einzutragende Felder sind jeweils duch einen Stern markiert, der i
 
 2. **Hilfsangebotsspezifizierungen**
 
-    Hilfsangebote, die eine ehrenamtlich arbeitende Person leisten kann, werden in Kategorien mit optionaler Spezifizierung angegeben. Sollte sich eine neue Tätigkeit auftun, kann diese hier hinzugefügt werden.
+    Hilfsangebote, die eine ehrenamtlich arbeitende Person leisten kann, werden in Kategorien mit optionaler Spezifizierung angegeben. Sollte sich eine neue Tätigkeit auftun, die noch nicht eingetragen wurde, kann diese hier hinzugefügt werden.
 
     - Kategorie
     - Spezifizierung
@@ -84,7 +84,7 @@ Verpflichtend einzutragende Felder sind jeweils duch einen Stern markiert, der i
 
 4. **Unterkünfte**
 
-    Die Zahl der Unterkünfte ist derzeit rückläufig im Landkreis Kassel.
+    Die Zahl der Unterkünfte ist derzeit rückläufig im Landkreis Kassel. Dass hier eine neue Unterkunft eingetragen werden muss, ist daher unwahrscheinlich.
 
     - Typ
     - Name
@@ -100,7 +100,7 @@ Verpflichtend einzutragende Felder sind jeweils duch einen Stern markiert, der i
 
 5. **Unterstützerkreise**
 
-    Hier befinden sich Eingabemöglichkeiten zu Beschwerdeinformationen, die (Leistungs-)Vermittelbarkeit einschränken können.
+    Unterstützerkreise sind jeweils für eine Unterkunft oder mehrere Unterkünfte zuständig. Sie werden zwar nach Ortsnamen benannt, müssen sich aber nicht zwangsläufig auf diesen Ort beschränken.
 
     - Unterstützerkreis
     - Ehrenamtsansprechpartner IDs
@@ -114,34 +114,34 @@ Die **Bearbeitung**-Ansicht ermöglicht bereits hinzugefügte Daten zu veränder
 ![Kategorieleiste](Ressourcen/Screenshots/Leisten/Kategorieleiste.png "Kategorieleiste")
 
 **Hinweis**  
-Diese Ansicht sollte auch immer vor der Eingabe eines neuen Datensatzes zu Hilfe genommen werden, um zu überprüfen, ob nicht ein solcher Eintrag schon existiert!
+Diese Ansicht sollte vor der Eingabe eines neuen Datensatzes zu Hilfe genommen werden, um zu überprüfen, ob ein solcher Eintrag nicht schon existiert!
 
 Die Unterformulare der **Bearbeitung**-Ansicht enthalten die gleichen Eingabeelemente wie die **Eingabe**-Ansicht (s.o.).
 
 #### Eingabehilfen
-Eine besondere Funktion stellen die doppelten Listenelemente dar. Bei langen Auswahllisten kann es einfach vorkommen, dass nicht auf den ersten Blick ersichtlich ist, welche Elemente ausgewählt sind. Dafür existiert eine zweite, graue Liste unter der Auswahlliste, die alle in der oberen Liste ausgewählten Elemente anzeigt.
+Eine besondere Funktion stellen die doppelten Listenelemente dar. Bei langen Auswahllisten kann es vorkommen, dass nicht auf den ersten Blick ersichtlich ist, welche Elemente ausgewählt sind. Dafür existiert eine zweite, ausgegraute Liste unter der Auswahlliste, die alle in der oberen Liste ausgewählten Elemente anzeigt.
 
 
 ### Statistikformulare
-Hier können alle Statistiken zu den eingetragenen Daten angesehen und gedruckt werden. Zum zuletzt bekannten Zeitpunkt waren aber noch keine Daten eingetragen, sodass nur Statistiken zu den Stammdaten erstellt wurden. Sie zeigen welche Möglichkeiten es bei der Erstellung von weiteren Statistiken gibt.
+Hier können alle Statistiken zu den eingetragenen Daten angesehen und gedruckt werden. Hilfreich ist diese Ansicht beispielsweise zum schnellen Finden von Kontaktdaten eines Ansprechpartners / einer Ansprechpartnerin.
 
 ![Statistiken](Ressourcen/Screenshots/Statistikformulare/Statistiken.png "Statistiken")
 
 **Hinweis**  
 Die im Screenshot sichtbaren Statistiken müssen nicht representativ sein!
-Außerdem gilt: Für aussagekräftige Statistiken sind vollständige Datensätze nötig. Statistiken bilden ein relatives Verhältnis ab, das anderweitig nicht gegeben sein kann.
+Außerdem gilt: Für aussagekräftige Statistiken sind vollständige Datensätze nötig. Statistiken bilden ein relatives Verhältnis ab, das anderweitig nicht berechnet werden kann.
 
 <a name="Code"></a>
 
 ## Code & Tabellen
-In den Ordnern `Code` und `Tabellen` befinden sich der VBA-Code, der die erweiterte Funktionalität der Datenbank stellt, und zwei Textversionen der Datenbanktabellen: in .csv- und .md-Format. Sie sollen als Hilfestellung für eigene Projekte dienen.
+In den Ordnern `Code` und `Tabellen` befinden sich der VBA-Code, der die erweiterte Funktionalität der Datenbank stellt, und zwei Textversionen der Datenbanktabellen: in .csv- und .md-Format. Sie sollen als Hilfestellung für andere Projekte dienen.
 
 <a name="Wartung"></a>
 
 ## Wartung
-Sollten Fehler auftauchen oder weitere Funktionen benötigt werden, die über die bereits gegebenen, zugreifbaren hinaus gehen, sollte jemand mit tiefen Access-Kenntnissen angesprochen werden. Die Wahrscheinlichkeit ist groß, dass sonst Änderungen vorgenommen werden, die zu unbeabsichtigten Auswirkungen, wie neue Fehler, bis hin zum Datenverlust führen können.
+Sollten Fehler auftauchen oder weitere Funktionen benötigt werden, die über die bereits gegebenen, zugreifbaren hinaus gehen, sollte jemand mit tiefen Access-Kenntnissen diese Änderungswünsche umsetzen. Die Wahrscheinlichkeit ist groß, dass sonst Änderungen vorgenommen werden, die zu unbeabsichtigten Auswirkungen, wie zu neuen Fehlern, bis hin zum Datenverlust führen können.
 
-Die Datenstruktur auf dem Server ist folgende:
+Die Datenstruktur auf dem Server ist:
 
 ```
 G:\...\
@@ -162,9 +162,9 @@ G:\...\
         └── EhraDB.lnk
 ```
 
-Empfehlenswert ist von Zeit zu Zeit ein Backup der Datei `EhraDB_20170831.accdb` anzulegen. Die Datei muss auch an den die Datei Wartenden versendet werden. Besser ist es, wenn Fehler vor Ort, beim Landkreis, behoben bzw. Funktionen vor Ort hinzugefügt werden. So ist sichergestellt, dass nicht zwei Personen gleichzeitig Änderungen an derselben Datenbank vornehmen.
+Empfehlenswert ist von Zeit zu Zeit ein Backup der Datei `EhraDB_20170831.accdb` anzulegen. Die Datei muss auch an den die Datei wartenden Mitarbeiter versendet werden. Besser ist es, wenn Fehler vor Ort, beim Landkreis, behoben bzw. Funktionen vor Ort hinzugefügt werden. So ist sichergestellt, dass nicht zwei Personen gleichzeitig Änderungen an derselben Datenbank vornehmen.
 
-Der Zugriff auf Bearbeitungselemente in Access muss über einen Umweg erreicht werden: Über das Menü **Datei** > **Datenschutzoptionen** öffnet sich der Optionsdialog. Hier kann links unter **Aktuelle Datenbank** alle Einstellungen vornehmen. Zum Bearbeiten empfiehlt sich folgende Konfiguration:
+Der Zugriff auf Bearbeitungselemente in Access muss über einen Umweg erreicht werden: Über das Menü **Datei** > **Datenschutzoptionen** öffnet sich der Optionsdialog. Hier können links unter **Aktuelle Datenbank** alle Einstellungen vorgenommen werden. Zum Bearbeiten empfiehlt sich folgende Konfiguration:
 
 - [x] Statusleiste anzeigen
 - [x] Dokumentregisterkarten anzeigen
